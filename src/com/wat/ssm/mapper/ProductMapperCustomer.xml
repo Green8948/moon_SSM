@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wat.ssm.mapper.ProductMapperCustomer" >
+        <select id="findProductByPage"  parameterType="int"   resultType="com.wat.ssm.po.Product">
+                 select  *  from  product  limit  #{index},5
+        </select>
+        <select id="findAll"  resultType="com.wat.ssm.po.Product">
+                 select  *  from  product 
+        </select>
+</mapper>
